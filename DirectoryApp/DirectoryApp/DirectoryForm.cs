@@ -91,5 +91,16 @@ namespace DirectoryApp
             string name = myfile.FullName;
             MessageBox.Show(name);
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            string myfile = @"C:\temp\apple.png";
+            textBox1.Text += Path.GetDirectoryName(myfile) + Environment.NewLine;
+            textBox1.Text += Path.GetExtension(myfile) + Environment.NewLine;
+            textBox1.Text += Path.GetFileName(myfile) + Environment.NewLine;
+            textBox1.Text += Path.GetFileNameWithoutExtension(myfile) + Environment.NewLine;
+            textBox1.Text += Path.GetPathRoot(myfile) + Environment.NewLine;
+            textBox1.Text += Path.GetFullPath(myfile) + Environment.NewLine;
+        }
     }
 }
