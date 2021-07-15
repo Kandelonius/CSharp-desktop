@@ -1,0 +1,10 @@
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\bin\Debug\DirectoryApp.exe.config
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\bin\Debug\DirectoryApp.exe
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\bin\Debug\DirectoryApp.pdb
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.csproj.AssemblyReference.cache
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.Properties.Resources.resources
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.csproj.GenerateResource.cache
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.csproj.CoreCompileInputs.cache
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.exe
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.pdb
+C:\Users\Shane\Desktop\Projects\C# Tutorials\DesktopApps\DirectoryApp\DirectoryApp\obj\Debug\DirectoryApp.DirectoryForm.resources
