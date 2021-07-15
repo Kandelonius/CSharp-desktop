@@ -35,6 +35,11 @@ namespace DirectoryApp
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnFCreate = new System.Windows.Forms.Button();
             this.btnFDelete = new System.Windows.Forms.Button();
+            this.btnRead = new System.Windows.Forms.Button();
+            this.btnWrite = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCopy = new System.Windows.Forms.Button();
+            this.btnProperty = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCreate
@@ -97,13 +102,66 @@ namespace DirectoryApp
             this.btnFDelete.UseVisualStyleBackColor = true;
             this.btnFDelete.Click += new System.EventHandler(this.btnFDelete_Click);
             // 
+            // btnRead
+            // 
+            this.btnRead.Location = new System.Drawing.Point(318, 63);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(75, 23);
+            this.btnRead.TabIndex = 0;
+            this.btnRead.Text = "Read";
+            this.btnRead.UseVisualStyleBackColor = true;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+            // 
+            // btnWrite
+            // 
+            this.btnWrite.Location = new System.Drawing.Point(225, 63);
+            this.btnWrite.Name = "btnWrite";
+            this.btnWrite.Size = new System.Drawing.Size(75, 23);
+            this.btnWrite.TabIndex = 0;
+            this.btnWrite.Text = "Write";
+            this.btnWrite.UseVisualStyleBackColor = true;
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(21, 119);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(372, 99);
+            this.textBox1.TabIndex = 1;
+            // 
+            // btnCopy
+            // 
+            this.btnCopy.Location = new System.Drawing.Point(399, 63);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(75, 23);
+            this.btnCopy.TabIndex = 0;
+            this.btnCopy.Text = "Copy";
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
+            // btnProperty
+            // 
+            this.btnProperty.Location = new System.Drawing.Point(399, 12);
+            this.btnProperty.Name = "btnProperty";
+            this.btnProperty.Size = new System.Drawing.Size(75, 23);
+            this.btnProperty.TabIndex = 0;
+            this.btnProperty.Text = "Property";
+            this.btnProperty.UseVisualStyleBackColor = true;
+            this.btnProperty.Click += new System.EventHandler(this.btnProperty_Click);
+            // 
             // DirectoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 299);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.btnFDelete);
             this.Controls.Add(this.btnFCreate);
+            this.Controls.Add(this.btnProperty);
+            this.Controls.Add(this.btnCopy);
+            this.Controls.Add(this.btnRead);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnMove);
@@ -111,6 +169,7 @@ namespace DirectoryApp
             this.Name = "DirectoryForm";
             this.Text = "DirectoryForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,6 +181,11 @@ namespace DirectoryApp
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button btnFCreate;
         private System.Windows.Forms.Button btnFDelete;
+        private System.Windows.Forms.Button btnRead;
+        private System.Windows.Forms.Button btnWrite;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.Button btnProperty;
     }
 }
 

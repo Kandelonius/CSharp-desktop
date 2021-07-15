@@ -24,7 +24,7 @@ namespace DirectoryApp
 
         private void btnMove_Click(object sender, EventArgs e)
         {
-            Directory.Move("temp", @"C:newfolder/temp");
+            Directory.Move("folder2", @"C:\temp");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -53,6 +53,43 @@ namespace DirectoryApp
         private void btnFDelete_Click(object sender, EventArgs e)
         {
             File.Delete("firstfile.txt");
+        }
+
+        private void btnWrite_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("third.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs);
+            sw.WriteLine("This is the first line");
+            sw.WriteLine("This is the second line");
+            sw.Flush();
+            sw.Close();
+            fs.Close();
+        }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("third.txt", FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(fs);
+            string text = "";
+            while (!sr.EndOfStream)
+            {
+                text += sr.ReadLine() + Environment.NewLine;
+            }
+            sr.Close();
+            fs.Close();
+            textBox1.Text = text;
+        }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            File.Copy("newfile.txt", @"C:\temp\newfile.txt");
+        }
+
+        private void btnProperty_Click(object sender, EventArgs e)
+        {
+            FileInfo myfile = new FileInfo("third.txt");
+            string name = myfile.FullName;
+            MessageBox.Show(name);
         }
     }
 }
